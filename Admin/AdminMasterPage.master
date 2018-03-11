@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head  runat="server">
+<title>My Template</title>
+<link href="../StyleSheet.CSS" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <form id="form1" runat="server">
+<table width="900" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr >
+    <td class="Topheading">JOB PORTAL ADMIN PANEL </td>
+  </tr>
+  <tr>
+   <td class="topmenu" valign="bottom">
+       <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Size="Medium">
+           <Items>
+               <asp:MenuItem NavigateUrl="~/Admin/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+               <asp:MenuItem NavigateUrl="#" Text="Jobs" Value="Jobs">
+                   <asp:MenuItem NavigateUrl="~/Admin/AddNewJobs.aspx" Text="Add New" Value="Add New"></asp:MenuItem>
+                   <asp:MenuItem NavigateUrl="~/Admin/Viewjobs.aspx" Text="View/Edit/Delete/Jobs" Value="View/Edit/Delete/Jobs"></asp:MenuItem>
+               </asp:MenuItem>
+               <asp:MenuItem NavigateUrl="#" Text="Resume" Value="Resume">
+                   <asp:MenuItem NavigateUrl="~/Admin/ViewResume.aspx" Text="View/Delete/Download" Value="View/Delete/Download"></asp:MenuItem>
+               </asp:MenuItem>
+           </Items>
+       </asp:Menu>
+      </td>
+  </tr>
+  <tr>
+    <td class="mainarea" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2"><img src="Images/images (2).jpg" width="901" height="130" alt="Main" /></td>
+    </tr>
+  <tr>
+    <td width="36%"></td>
+    <td width="64%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="Images/candidate.png" width="322" height="200" alt="candidate" /></td>
+    <td valign="top"><table width="100%" border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <td>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+      </td>
+  </tr>
+</table> 
+ </td>
+  </tr>
+</table></td>
+  </tr>
+  <tr>
+    <td class="footer">Copyright@All Right Reserved</td>
+  </tr>
+</table>
+ </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

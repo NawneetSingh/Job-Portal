@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="UserMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head  runat="server">
+<title>My Template</title>
+<link href="StyleSheet.CSS" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .auto-style1 {
+            height: 39px;
+        }
+    </style>
+</head>
+<body>
+     <form id="form1" runat="server">
+<table width="900" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr >
+    <td class="Topheading">JOB PORTAL </td>
+  </tr>
+  <tr>
+   <td class="topmenu" valign="bottom"><table width="0" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="border-style: solid"><a href="Home.aspx" style="border-style: solid">Home</a></td>
+    <td style="border-style: solid"><a href="About.aspx">About</a></td>
+    <td style="border-style: solid"><a href="Contact.aspx">Contact</a></td>
+    <td style="border-style: solid"><a href="Jobs.aspx">Jobs</a></td>
+    <td style="border-style: solid">
+        <asp:LinkButton ID="linksignoutsignin" runat="server" OnClick="linksignoutsignin_Click" ValidationGroup="Signup">Signup</asp:LinkButton>
+      </td>
+    <td style="border-style: solid">
+        <asp:LinkButton ID="linkloginlogout" runat="server" OnClick="linkloginlogout_Click" ValidationGroup="Login">Login</asp:LinkButton>
+      </td>
+  </tr>
+</table></td>
+  </tr>
+  <tr>
+    <td class="mainarea" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2"><img src="Images/images (2).jpg" width="901" height="130" alt="Main" style="background-color: #FFFFFF; border-style: solid" /></td>
+    </tr>
+  <tr>
+    <td width="36%"></td>
+    <td width="64%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="Images/candidate.png" width="322" height="200" alt="candidate" style="border-style: solid" /></td>
+    <td valign="top"><table width="100%" border="0" cellspacing="5" cellpadding="5" class="auto-style1">
+ <tr>
+ <td style="border-style: solid; vertical-align:top; background-color: #C0C0C0;">
+     <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+         <CurrentNodeStyle ForeColor="#333333" />
+         <NodeStyle Font-Bold="True" ForeColor="#284E98" />
+         <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />
+         <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />
+     </asp:SiteMapPath>
+</td>
+ </tr>
+ <tr>
+ <td style="vertical-align:top">
+ <asp:ContentPlaceHolder id="ContentPlaceholder1" runat="server">
+    
+ </asp:ContentPlaceHolder>
+</td>
+ </tr>
+  </table> 
+ </td>
+  </tr>
+</table></td>
+  </tr>
+  <tr>
+    <td class="footer">Copyright@All Right Reserved</td>
+  </tr>
+</table> 
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
